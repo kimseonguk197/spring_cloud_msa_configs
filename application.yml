@@ -1,0 +1,10 @@
+server:
+  port: ${PORT:8080}
+
+spring:
+  application:
+    name: global-app
+
+logging:
+  level:
+    root: INFO

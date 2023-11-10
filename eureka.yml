@@ -1,0 +1,8 @@
+spring:
+  profiles: eurekaserver
+  cloud:
+    eureka:
+      server:
+        enable-self-preservation: false
+      instance:
+        hostname: eurekaserver

@@ -1,0 +1,20 @@
+spring:
+  profiles: item
+  datasource:
+    url: jdbc:mysql://localhost:3306/item
+    username: root
+    password: 1234
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://configserver:8888/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+
+myapp:
+  custom-property: customValue1
