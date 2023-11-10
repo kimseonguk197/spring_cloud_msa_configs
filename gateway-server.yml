@@ -1,5 +1,4 @@
 spring:
-  profiles: gatewayserver
   cloud:
     gateway:
       routes:
