@@ -1,5 +1,6 @@
 spring:
-  profiles: item-service
+  application:
+    name: item-service
   datasource:
     url: jdbc:mariadb://localhost:3306/item
     username: root
