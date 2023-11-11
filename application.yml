@@ -1,0 +1,11 @@
+# 공통사항 정의
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://configserver:8888/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+
+logging:
+  level:
+    root: INFO
