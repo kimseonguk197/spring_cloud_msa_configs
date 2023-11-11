@@ -8,13 +8,3 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://configserver:8888/eureka/
-    register-with-eureka: true
-    fetch-registry: true
-
-myapp:
-  custom-property: customValue1
