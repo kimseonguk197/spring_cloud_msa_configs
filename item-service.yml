@@ -1,7 +1,6 @@
 server:
   port: 8081
 spring:
-  profiles: item
   datasource:
     url: jdbc:mariadb://localhost:3306/item
     username: root
