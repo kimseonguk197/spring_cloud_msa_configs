@@ -12,3 +12,7 @@ eureka:
 logging:
   level:
     root: info
+apiurl:
+  member: http://api-gateway/member-service
+  order: http://api-gateway/order-service
+  item: http://api-gateway/item-service
