@@ -6,7 +6,6 @@ spring:
       group-id: order-group
       #earliest: 가장 처음으로 사용 가능한 메시지부터 읽기 시작
       auto-offset-reset: earliest
-#      config정보 갱신 테스트
-
+#      config정보 갱신 테스트를 위한 message세팅
 message:
   hello: helloworld3
