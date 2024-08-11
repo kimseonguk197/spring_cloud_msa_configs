@@ -1,0 +1,9 @@
+
+spring:
+  kafka:
+    bootstrap-servers: localhost:9093
+    consumer:
+#      group-id: Kafka 컨슈머 그룹을 식별하는 ID를 지정. 동일한 그룹 ID를 가진 컨슈머들은 메시지를 분담해서 read
+      group-id: order-group
+      #earliest: 가장 처음으로 사용 가능한 메시지부터 읽기 시작
+      auto-offset-reset: earliest
