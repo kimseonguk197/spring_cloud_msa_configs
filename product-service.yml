@@ -9,4 +9,4 @@ spring:
 #      config정보 갱신 테스트
 
 message:
-  hello: helloworld2
+  hello: helloworld3
