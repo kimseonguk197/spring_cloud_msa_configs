@@ -15,3 +15,7 @@ resilience4j:
         ignoreExceptions:
           - org.springframework.web.client.HttpClientErrorException$BadRequest  # 400 예외는 무시
           - org.springframework.web.client.HttpClientErrorException$NotFound  # 404 예외는 무시
+
+  health:
+    circuitbreakers:
+      enabled: true # circuitbreakers 정보 노출
