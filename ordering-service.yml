@@ -13,6 +13,6 @@ resilience4j:
         permittedNumberOfCallsInHalfOpenState: 2  # HALF-OPEN 상태에서 2개 요청이 모두 성공하면 → CLOSED 상태로 변경
         slidingWindowSize: 4  # 최근 4개의 요청을 기준으로 실패율 계산
         slidingWindowType: COUNT_BASED  # ✅ 요청 개수를 기준으로 실패율을 계산하도록 설정
-        minimumNumberOfCalls: 4  # ✅ 최소 4개 요청이 있어야 Circuit Breaker 활성화
+        minimumNumberOfCalls: 1  # ✅ 최소 1개 요청이 이후부터 있어야 Circuit Breaker 활성화
         ignoreExceptions:
           - java.lang.IllegalArgumentException  # IllegalArgumentException 무시
