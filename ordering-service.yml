@@ -11,6 +11,7 @@ resilience4j:
         slowCallDurationThreshold: 2s  # 2초 이상 지연되면 "느린 요청"으로 간주
         permittedNumberOfCallsInHalfOpenState: 2  # HALF-OPEN 상태에서 2개 요청이 모두 성공하면 → CLOSED 상태로 변경
         slidingWindowSize: 4  # 최근 4개의 요청을 기준으로 실패율 계산
+        minimumNumberOfCalls: 2
         ignoreExceptions:
           - org.springframework.web.client.HttpClientErrorException$BadRequest  # 400 예외는 무시
           - org.springframework.web.client.HttpClientErrorException$NotFound  # 404 예외는 무시
